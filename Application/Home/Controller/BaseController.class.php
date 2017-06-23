@@ -13,13 +13,13 @@ class BaseController extends Controller {
         $this->userObject = new \User();
     }
 
-    // protected function checkLogin(){
-    //     $acl = array('login','verifyimg', 'check_verify'); //不需要登录的页面写进去
-    //     if(!in_array(strtolower(ACTION_NAME), $acl)){
-    //         if(!session('user')){
-    //             $this->redirect('Index/login');
-    //         }
-    //     }
-    // }
+    protected function checkLogin(){
+        $acl = array('login','verifyimg', 'check_verify'); //不需要登录的页面写进去
+        if(!in_array(strtolower(ACTION_NAME), $acl)){
+            if(!session('user')){
+                $this->redirect('Index/login');
+            }
+        }
+    }
  
 }
