@@ -1,4 +1,4 @@
-{__NOLAYOUT__}  
+<?php if (!defined('THINK_PATH')) exit();?>  
 <style type="text/css">  
     *{margin:0;padding:0;}  
     html,body{ overflow:hidden}  
@@ -30,8 +30,8 @@
 <script>  
   
     function locahost(){  
-        if("{$jumpUrl}"){  
-            location.href="{$jumpUrl}";  
+        if("<?php echo ($jumpUrl); ?>"){  
+            location.href="<?php echo ($jumpUrl); ?>";  
         }else{  
             window.history.back();  
         }  
@@ -39,7 +39,7 @@
   
     function closeWindow(){window.open('', '_self', '');window.close();}  
   
-    var i = "{$waitSecond}";  if(i!=0){window.close_id = setInterval(function() {if (i > 0) {document.getElementById('time').innerHTML = i;i = i - 1;} else {  
+    var i = "<?php echo ($waitSecond); ?>";  if(i!=0){window.close_id = setInterval(function() {if (i > 0) {document.getElementById('time').innerHTML = i;i = i - 1;} else {  
         locahost();clearInterval(window.close_id);}}, 1000);}</script>  
   
   
@@ -49,12 +49,12 @@
     <div class="box-b">  
         <div class="box-title">消息提示</div>  
         <div class="box-text">  
-            {$message}  
+            <?php echo ($message); ?>  
         </div>  
-        <div class="box-button"><a class="a-2" href="javascript:;" onclick="locahost()"><font id="time" style="color:red;">{$waitSecond}</font>秒后跳转到下一个页面</a><a class="a-1" href="{:U('Index/index')}">返回前台首页</a></div>  
+        <div class="box-button"><a class="a-2" href="javascript:;" onclick="locahost()"><font id="time" style="color:red;"><?php echo ($waitSecond); ?></font>秒后跳转到下一个页面</a><a class="a-1" href="<?php echo U('Index/index');?>">返回前台首页</a></div>  
         <div style="height:10px; overflow:hidden; width:100%; clear:both"></div>  
     </div>  
 </div>  
   
 </body>  
-</html>  
+</html>

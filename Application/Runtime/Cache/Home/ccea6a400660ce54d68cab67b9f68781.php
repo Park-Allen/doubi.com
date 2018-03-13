@@ -1,4 +1,4 @@
-{__NOLAYOUT__}
+<?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <head>
@@ -9,9 +9,9 @@
         <meta name="author" content="">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="__PUBLIC__/login/css/reset.css">
-        <link rel="stylesheet" href="__PUBLIC__/login/css/supersized.css">
-        <link rel="stylesheet" href="__PUBLIC__/login/css/style.css">
+        <link rel="stylesheet" href="/Public/login/css/reset.css">
+        <link rel="stylesheet" href="/Public/login/css/supersized.css">
+        <link rel="stylesheet" href="/Public/login/css/style.css">
 
 
     </head>
@@ -20,7 +20,7 @@
 
         <div class="page-container">
             <h1>Login</h1>
-            <form action="{:U('Index/login')}" method="post">
+            <form action="<?php echo U('Index/login');?>" method="post">
 				<div>
 					<input type="text" name="username" class="username" placeholder="Username" autocomplete="off"/>
 				</div>
@@ -44,8 +44,8 @@
 
         <!-- Javascript -->
 		<script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
-        <script src="__PUBLIC__/login/js/supersized.3.2.7.min.js"></script>
-        <script src="__PUBLIC__/login/js/supersized-init.js"></script>
+        <script src="/Public/login/js/supersized.3.2.7.min.js"></script>
+        <script src="/Public/login/js/supersized-init.js"></script>
 		<script>
 		$(".btn").click(function(){
 			is_hide();
@@ -80,4 +80,3 @@
     </body>
 
 </html>
-

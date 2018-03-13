@@ -70,7 +70,7 @@
 	</div>
  <script type="text/javascript" src="/Public/jquery-3.2.1.js"></script>
 <script>
-	ws = new WebSocket("ws://127.0.0.1:7272");
+	ws = new WebSocket("ws://127.0.0.1:1236");
 		ws.onopen = function() {
 		console.log("连接成功");
 	};
