@@ -12,7 +12,7 @@ class IndexController extends BaseController
     {
         parent::_initialize();
         $this->Gateway                  = new \Gateway();
-        $this->Gateway->registerAddress = '127.0.0.1:1236';
+        $this->Gateway->registerAddress = '127.0.0.1:1238';
 
     }
 
@@ -77,9 +77,8 @@ class IndexController extends BaseController
         $this->Gateway->registerAddress = '127.0.0.1:1236';
         $send_user                      = $this->userObject->getUserInfo();
         $uid                            = I('post.uid');
-        echo $uid;
-        $message  = I('post.msg');
-        $req_data = json_encode(
+        $message                        = I('post.msg');
+        $req_data                       = json_encode(
             array(
                 'sendUserImg'  => $send_user['img'],
                 'sendUserName' => $send_user['user'],

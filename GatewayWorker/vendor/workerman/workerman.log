@@ -1,3 +1,14 @@
 2018-03-13 16:23:33 pid:14627 Workerman[start.php] start in DEBUG mode
 2018-03-13 16:25:38 pid:14627 Workerman[start.php] Stopping ...
 2018-03-13 16:25:38 pid:14627 Workerman[start.php] has been stopped
+2018-03-14 09:03:18 pid:9093 Workerman[start.php] start in DEBUG mode
+2018-03-14 09:08:56 pid:9093 Workerman[start.php] Stopping ...
+2018-03-14 09:08:56 pid:9093 Workerman[start.php] has been stopped
+2018-03-14 09:08:57 pid:9547 Workerman[start.php] start in DEBUG mode
+2018-03-14 09:08:59 pid:9552 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2018-03-14 09:08:59 pid:9552 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2018-03-14 09:09:12 pid:9547 Workerman[start.php] Stopping ...
+2018-03-14 09:09:12 pid:9547 Workerman[start.php] has been stopped
+2018-03-14 09:09:13 pid:9622 Workerman[start.php] start in DEBUG mode
+2018-03-14 09:09:28 pid:9622 Workerman[start.php] Stopping ...
+2018-03-14 09:09:28 pid:9622 Workerman[start.php] has been stopped
